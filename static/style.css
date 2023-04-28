@@ -282,7 +282,7 @@ max-width: 100%;
     justify-content: center;
 }
 .right-contact{
-    background-color: rgb(10, 10, 10);
+    /* background-color: rgb(10, 10, 10); */
     color: white;
     padding-left: 20px;
     padding-right: 20px;
