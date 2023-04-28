@@ -1,0 +1,602 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    overflow-x: hidden;
+     box-sizing: border-box;
+}
+
+/* ********* Home Page ********** */
+.home{
+  height: 100vh;
+  width: 100%;
+  background-color: #c4b6f6;
+    /* height: 100vh;
+    width: 100%; */
+    display: flex;
+  
+    align-items: center;
+     justify-content:space-around;
+
+}
+
+
+.home-left img{
+    /* max-width: 100%; 
+  height: auto; */
+    width: 30vw;
+}
+
+.home-right{
+    text-align: center;
+}
+
+.home-right p{
+    max-width: 600px;
+}
+
+@media screen and (max-width:793px) {
+    .home-left img{
+        width: 256px;
+        
+    }
+
+}
+
+@media  screen and (max-width:900px) {
+  .home{
+    flex-direction: column;
+    justify-content:center;
+}
+  
+}
+
+.home img{
+margin-top: 0px;
+max-width: 100%; 
+ max-height: 100%;
+}
+
+.text-container {
+    position: relative;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .welcome h1 {
+    white-space: nowrap;
+    overflow: hidden;
+    /* animation:  write 3s steps(20) forwards; */
+    animation: typing 2s steps(24, end), blink-caret 0.5s step-end infinite alternate;
+
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #000 }
+  }
+
+ 
+
+.life-section{
+    background-color: #2001a2;
+    margin-bottom: 0px;
+}
+
+.work-section{
+    margin-top: -4px;
+}
+
+.music-section{
+    margin-top: -4px;
+}
+.music-btn{
+    /* background-color: #e0a96d; */
+    background-color: #c4b6f6;
+    border: 1px solid black;
+    margin-bottom: 7px;
+
+}
+
+.music-btn:hover{
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+/* ********* wavy background **************** */
+.wave1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave1 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.wave1 .shape-fill {
+    fill: #CCCCFF;
+}
+
+/* ********** wave 2 ******** */
+.wave2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave2 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.wave2 .shape-fill {
+    fill: #ffffff;
+}
+
+
+/* ************* Flex box for life work and music ****** */
+
+.flex-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3px;
+    
+}
+
+.fb2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3px;
+    
+}
+.img-left{
+    text-align: center;
+   
+}
+.text{
+   max-width: 500px;
+    
+}
+.text2{
+  padding-bottom: 30px;
+}
+.img-right img{
+    height: 400px;
+    width: 350px;
+    margin-left: 50px;
+
+}
+
+/*  ************* cxo ********** */
+
+
+.d-flex{
+    justify-content:space-evenly;
+    margin-top: 13px;
+}
+
+.content-flex{
+    max-width: 500px;
+    
+}
+
+.img-flex img{
+    max-height: 400px;
+    max-width: 550px;
+}
+
+@media screen and (max-width:800px) {
+    .cxo img{
+    width: 80vw;
+    }
+}
+
+/* ********** ment-toon ************ */
+.ment-toon{
+    margin-top: 20px;
+    /* background-color: #9ad9dbcd; */
+}
+
+.ment-toon .flex-box{
+    margin-bottom: 0px;
+}
+
+.mentoon-toonland{
+    margin-top: 30px;
+    /* background-color: #cc9d90cd; */
+    background-color: white;
+    margin: 20px 30px;
+    padding-bottom: 0px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgb(60, 56, 56);
+    transition: all 0.5s ease-in-out;
+
+}
+
+.mentoon-toonland:hover{
+    cursor: pointer;
+    /* box-shadow:14px 14px 8px; */
+    transform: scale3d(1.3, 1.2, 0.3);
+}
+
+@media screen and (max-width:700px){
+    .mentoon-toonland:hover{
+        cursor: pointer;
+        box-shadow:14px 14px 8px;
+        transform:none;
+    }
+}
+
+.content-men-toon{
+    text-align: center;
+   max-width: 502px;
+   padding-bottom: 0px;
+   background-color: #ccffd2;
+}
+
+/* ***************** Home image ************* */
+
+
+
+@media screen and (max-width:900px){
+   .fb2{
+        flex-direction: column-reverse;
+   }
+}
+
+
+.flex-contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.left-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.right-contact{
+    background-color: rgb(10, 10, 10);
+    color: white;
+    padding: 30px;
+    margin-top: 2vh;
+    border-radius: 20px;
+    margin-left: 10vw;
+
+  }
+
+  .fc{
+    /* margin: 20px; */
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+  }
+
+  form .fc input,textarea,button{
+    padding: 7px;
+    border-radius: 7px;
+    opacity: 0.9;
+    font-size: 15px;
+    border: 3px solid black;
+    /* box-shadow: 4px 4px 7px grey; */
+  }
+
+  @media screen and (max-width:479px){
+    #name{
+      width: 100%;
+    }
+    #number{
+      margin-top: 5px;
+      width: 100%;
+    }
+  }
+ 
+ 
+  @media screen and (max-width:758px)  {
+    .right-contact{
+        margin-left: 0vw;
+      }
+  }
+
+  @media screen and (max-width:916px){
+        .left-contact{
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .left-contact h3{
+            display: none;
+        }
+  }
+  /* ************ Icons *************  */
+
+  .icon i{
+    font-size: 40px;
+    padding-bottom: 10px;
+    /* color: rgb(156, 200, 218); */
+    color: #9d9deb;
+  }
+
+  .icon{
+    margin-bottom: 10px;
+  }
+
+  .email2{
+    padding-left: 50px;
+  }
+
+  .lnk{
+    padding-left: 93px;
+  }
+
+  .lnk a{
+    text-decoration: none;
+    color: #333;
+  }
+  .email input , .message textarea{
+    width: 100%;
+  }
+
+  form button{
+    /* background-color: rgb(156, 200, 218); */
+    background-color: #c4b6f6;
+    font-weight: bolder;
+    font-size: large;
+  }
+
+  /* footer{
+    font-size: large;
+  } */
+
+  .more-work{
+    display: none;
+    margin-bottom: 10px;
+    width: 100vw;
+  }
+
+  .more-work-btn{
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .more-work-btn button{ 
+    border: 1px solid black;
+    background-color: #CCCCFF;
+    font-size: large;
+  }
+
+  .more-work-btn button:hover{
+    background-color:#7b7be7;
+    border: 2px solid black;
+  }
+
+
+@media screen and (max-width:750px){
+    .d-flex{
+      justify-content: center;
+    }
+    .even{
+       flex-direction: column-reverse;
+    }    
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+    .brain img{
+        width: 250px;
+        
+    }
+
+  }
+
+  @media screen and (max-width:801px){
+    .content-flex{
+        margin-top: 10px;
+    }
+  }
+
+  @media screen and (max-width:900px) {
+    .img-right img{
+        margin-left: 0px;
+        width: 350px;
+    }
+  }
+
+  
+  @media screen and (max-width:360px) {
+    .img-right img{
+        width: 250px;
+    }
+  }
+
+  @media screen and (max-width:585px) {
+    .mentoon-toonland img{
+        width: 300px;
+    }
+  }
+
+  @media screen and (max-width:320px) {
+    .mentoon-toonland img{
+        width: 200px;
+    }
+  }
+
+  /* **************** music images ********** */
+
+  .more-music{
+    background-color: #ffffff;
+    margin-top: 0;
+    width: 100vw;
+  }
+
+  .image-flex-box img{
+    width: 400px;
+    height: 400px;
+    margin-bottom: 15px;
+    /* border: 2px solid black; */
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+@media screen and (max-width:410px) {
+  .image-flex-box img{
+    width: 95vw;
+  }
+  
+}
+
+.image-flex-box img:hover{
+    box-shadow: 10px 10px 10px grey;
+}
+
+#photos{
+    display: none;
+}
+.image-flex-box{
+  margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+
+.close-btn button{
+  border: 1px solid black;
+}
+
+
+@media screen and (max-width:801px){
+  .img-flex img{
+    width: 250px;
+  }
+
+  .hand-img img{
+    width: 250px;
+  }
+  
+}
+
+@media screen and (max-width:1000px) {
+  .para3{
+    display: none;
+  }  
+}
+
+.icons a {
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 15px;
+  color: #fff;
+  border-radius: 50%;
+  outline: 2px solid #fff;
+  transition-property:
+      outline-offset, outline-color,
+      background-color;
+  transition-duration: .25s;
+  margin: 4px;
+}
+
+.icons i:hover {
+  outline-offset: 4px;
+}
+
+.icons i:hover i {
+  animation: shake .25s;
+}
+
+.fb:hover{
+  background-color: #0165E1;
+  outline-color:#0165E1 ;
+}
+
+.insta:hover {
+  background-image: radial-gradient(circle at 30% 107%,
+          #fdf497 0%, #fdf497 5%,
+          #fd5949 45%, #d6249f 60%,
+          #285AEB 90%);
+  outline-color: #a02d76;
+}
+
+.twt:hover {
+  background-color: #1da1f2;
+  outline-color: #1da1f2;
+}
+
+.li:hover {
+  background-color: #0077b5;
+  outline-color: #0077b5;
+}
+
+
+
+@keyframes shake {
+  10% {
+      transform: rotate(15deg);
+  }
+
+  20% {
+      transform: rotate(-15deg);
+  }
+
+  30% {
+      transform: rotate(15deg);
+  }
+
+  40% {
+      transform: rotate(-15deg);
+  }
+}
+
+.products a{
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+.products a:hover{
+  color: rgb(192, 177, 177);
+}
+
+.flex-footer{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mentoon-toonland button{
+  border: 1px solid black;
+}
+
+.mentoon-toonland button:hover{
+  border: 2px solid black;
+}
