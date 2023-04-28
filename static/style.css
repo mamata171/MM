@@ -284,7 +284,10 @@ max-width: 100%;
 .right-contact{
     background-color: rgb(10, 10, 10);
     color: white;
-    padding: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
     margin-top: 2vh;
     border-radius: 20px;
     margin-left: 10vw;
@@ -306,6 +309,9 @@ max-width: 100%;
     /* box-shadow: 4px 4px 7px grey; */
   }
 
+  .text-area{
+    margin-bottom: 0px;
+  }
   @media screen and (max-width:479px){
     #name{
       width: 100%;
@@ -599,4 +605,11 @@ max-width: 100%;
 
 .mentoon-toonland button:hover{
   border: 2px solid black;
+}
+
+@media screen and (max-width:540px) {
+  .right-contact{
+    width: 95vw;
+  }
+  
 }
