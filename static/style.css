@@ -10,15 +10,44 @@ body{
 .home{
   height: 100vh;
   width: 100%;
-  background-color: #c4b6f6;
-    /* height: 100vh;
-    width: 100%; */
+  background-color: #FBEAEB;
+  /* background-color: #EEA47F; */
+  /* background:url(../static/Images/star.webp); */
+ 
     display: flex;
     align-items: center;
-     justify-content:space-around;
+     justify-content:center;
 
 }
 
+.home-img{
+  background-color: #00539C;
+  width: 75vw;
+  height: 86vh;
+  margin: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 8px black;
+}
+.home-content{
+  text-align: center;
+  color: white;
+}
+
+.home-content h1{
+  font-family: "dancing script";
+  font-size: 3rem;
+}
+
+.home-content span{
+  color: yellow;
+}
+.home p{
+  width: 500px;
+}
 .youtube-img img{
   width: 250px;
   border-radius: 10px;
@@ -54,11 +83,11 @@ body{
   
 } */
 
-.home img{
+/* .home img{
 margin-top: 0px;
-max-width: 100%; 
- max-height: 100%;
-}
+margin-left: 100px;
+ max-width: 70%;
+} */
 
 .text-container {
     position: relative;
@@ -87,16 +116,19 @@ max-width: 100%;
  
 
 .life-section{
-    background-color: #2001a2;
+    /* background-color: #2001a2; */
     margin-bottom: 0px;
+    
 }
 
 .work-section{
     margin-top: -4px;
+    color: white;
 }
 
 .music-section{
     margin-top: -4px;
+  
 }
 .music-btn{
     /* background-color: #e0a96d; */
@@ -130,7 +162,8 @@ max-width: 100%;
 }
 
 .wave1 .shape-fill {
-    fill: #CCCCFF;
+    /* fill: #CCCCFF; */
+    fill: #00539C;
 }
 
 /* ********** wave 2 ******** */
@@ -152,7 +185,7 @@ max-width: 100%;
 }
 
 .wave2 .shape-fill {
-    fill: #ffffff;
+    fill: #FBEAEB;
 }
 
 
@@ -163,8 +196,17 @@ max-width: 100%;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-bottom: 3px;
+    /* margin-bottom: 3px; */
     
+}
+
+.fbw{
+  /* background-color: rgb(243, 244, 248);
+  width: 70vw;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow:4px 4px 8px rgb(56, 55, 55); */
+
 }
 
 .fb2{
@@ -209,9 +251,10 @@ max-width: 100%;
 
 
 .img-flex img{
-    max-height: 400px;
+    max-height: 280px;
     max-width: 550px;
     border-radius: 10px;
+    margin: 15px 0px;
 }
 
 @media screen and (max-width:800px) {
@@ -222,9 +265,10 @@ max-width: 100%;
 
 /* ********** ment-toon ************ */
 .ment-toon{
-    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: none;
-    /* background-color: #9ad9dbcd; */
+    background-color: #fad2d5;
 }
 
 .ment-toon .flex-box{
@@ -232,9 +276,9 @@ max-width: 100%;
 }
 
 .mentoon-toonland{
-    margin-top: 30px;
+    padding-top: 30px;
     /* background-color: #cc9d90cd; */
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     margin: 20px 30px;
     padding-bottom: 0px;
     text-align: center;
@@ -262,7 +306,8 @@ max-width: 100%;
     text-align: center;
    max-width: 502px;
    padding-bottom: 0px;
-   background-color: #ccffd2;
+   background-color: #f3c1c5;
+   /* background-color: #E2D1F9; */
 }
 
 /* ***************** Home image ************* */
@@ -321,7 +366,7 @@ max-width: 100%;
     font-size: 15px;
     /* border: 3px solid black; */
     border: 1px solid #ccc;
-    background-color: #f5f5f5;
+    background-color: #ffffff;
 
     /* box-shadow: 4px 4px 7px grey; */
   }
@@ -391,8 +436,8 @@ max-width: 100%;
   .icon i{
     font-size: 30px;
     padding-bottom: 10px;
-    /* color: rgb(156, 200, 218); */
-    color: #9d9deb;
+    color: #00539C;
+    /* color: #9d9deb; */
   }
 
   .icon{
@@ -410,15 +455,16 @@ max-width: 100%;
 
   form button{
     /* background-color: rgb(156, 200, 218); */
-    background-color: #c4b6f6;
+    /* background-color: #c4b6f6; */
     font-weight: bolder;
     font-size: large;
   }
 
   .more-work{
-    /* display: none; */
-    margin-bottom: 10px;
+  
     width: 100vw;
+    /* background-color: rgb(233, 230, 230); */
+    background-color: white;
   }
 
   .more-work-btn{
@@ -427,14 +473,10 @@ max-width: 100%;
   }
   .more-work-btn button{ 
     border: 1px solid black;
-    background-color: #CCCCFF;
-    font-size: large;
+  
   }
 
-  .more-work-btn button:hover{
-    background-color:#7b7be7;
-    border: 2px solid black;
-  }
+ 
 
 
 @media screen and (max-width:750px){
@@ -774,7 +816,7 @@ max-width: 100%;
 
 .vertical-line {
   border-left: 1px solid black;
-  height: 250px;
+  height: 200px;
   /* font-size: 30px; */
 
 }
@@ -1098,7 +1140,7 @@ footer{
 
 .vertical-line {
   border-left: 1px solid black;
-  height: 250px;
+  height: 180px;
   /* font-size: 30px; */
 
 }
@@ -1118,4 +1160,137 @@ footer{
     font-size: 1rem;
   }
   
+}
+
+
+.home-img img{
+  width: 33vw;
+}
+
+/* .hiring{
+  background-color: #fcfcfc;
+  color: white;
+} */
+
+/* .even{
+  background-color: #EEA47F;
+  color: white;
+} */
+
+.music-section{
+  /* background-color: #fdc0a2;  */
+  color: white;
+  background-color: #00539C;
+}
+
+#mb{
+  border: 1px solid black;
+}
+
+.contact{
+  background-color:#FBEAEB;
+}
+
+.right-contact{
+ 
+  background-color: #00539C;
+}
+
+footer{
+  background-color:#00539C;
+}
+
+.more-work{
+  background-color: #FBEAEB;
+}
+
+/* #moving-image1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+
+#moving-image2 {
+  position: fixed;
+  top: 0px;
+  right: 50px;
+  transition: all 0.5s ease-in-out;
+  width: 100px;
+} */
+
+
+.moving-image{
+  width: 50px;
+}
+#moving-image1 {
+  width: 50px;
+  position: absolute;
+  top: 10%;
+  left: -100px;
+  animation: moveRocket 20s linear infinite;
+  
+}
+
+#moving-image2 {
+  width: 50px;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  animation: moveRocket2 20s linear infinite;
+  
+}
+
+@keyframes moveRocket {
+  0% {
+    transform: translateX(0) translateY(100vh);
+  }
+  25% {
+    transform: translateX(70vw) translateY(0);
+  }
+  50% {
+    transform: translateX(100vw) translateY(20vh);
+  }
+  75% {
+    transform: translateX(50vw) translateY(80vh);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+@keyframes moveRocket2 {
+  0% {
+    transform: translateX(10px) translateY(0vh);
+  }
+  25% {
+    transform: translateX(50vw) translateY(60vh);
+  }
+  50% {
+    transform: translateX(70vw) translateY(30vh);
+  }
+  75% {
+    transform: translateX(80vw) translateY(10vh);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+         
+
+.fix-image1{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100px;
+}
+
+
+.fix-image2{
+  position: fixed;
+  top: 0;
+  right: 10px;
+  width: 100px;
+
 }

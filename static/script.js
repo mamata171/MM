@@ -36,3 +36,33 @@ function musichide() {
 
 }
 
+
+    const movingImage1 = document.getElementById('moving-image1');
+    const movingImage2 = document.getElementById('moving-image2');
+const bodyWidth = document.body.clientWidth;
+const bodyHeight = document.body.clientHeight;
+const imageWidth = movingImage.clientWidth;
+const imageHeight = movingImage.clientHeight;
+
+let xPos = Math.random() * (bodyWidth - imageWidth);
+let yPos = Math.random() * (bodyHeight - imageHeight);
+let xDirection = Math.random() >= 0.5 ? 1 : -1;
+let yDirection = Math.random() >= 0.5 ? 1 : -1;
+
+function moveImage() {
+  xPos += 1 * xDirection;
+  yPos += 1 * yDirection;
+
+  if (xPos + imageWidth >= bodyWidth || xPos <= 0) {
+    xDirection *= -1;
+  }
+
+  if (yPos + imageHeight >= bodyHeight || yPos <= 0) {
+    yDirection *= -1;
+  }
+
+  movingImage.style.transform = `translate(${xPos}px, ${yPos}px)`;
+}
+
+setInterval(moveImage1, 10);
+// setInterval(moveImage2, 10);
