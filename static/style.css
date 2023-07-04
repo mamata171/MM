@@ -23,18 +23,23 @@ body{
 .home-img{
   background-color: #00539C;
   width: 75vw;
-  height: 86vh;
+  height: 80vh;
   margin: 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   border-radius: 10px;
   box-shadow: 5px 5px 8px black;
+  padding: 20px 30px;
 }
 .home-content{
   text-align: center;
   color: white;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+ align-items: center;
 }
 
 .home-content h1{
@@ -45,7 +50,7 @@ body{
 .home-content span{
   color: yellow;
 }
-.home p{
+.home-content p{
   width: 500px;
 }
 .youtube-img img{
@@ -1167,15 +1172,7 @@ footer{
   width: 33vw;
 }
 
-/* .hiring{
-  background-color: #fcfcfc;
-  color: white;
-} */
 
-/* .even{
-  background-color: #EEA47F;
-  color: white;
-} */
 
 .music-section{
   /* background-color: #fdc0a2;  */
@@ -1294,3 +1291,42 @@ footer{
   width: 100px;
 
 }
+
+@media screen and (max-width: 1003px){
+body{
+  overflow-x: hidden;
+}
+.moving-image{
+  display: none;
+}  
+
+.container-small2{
+  display: none;
+}
+}
+
+
+
+@media screen and (max-width: 793px){
+  body{
+    overflow-x: hidden;
+  }
+.home-img img {
+    width: 256px;
+}
+}
+
+@media screen and (max-width:650px) {
+  body{
+    overflow-x: hidden;
+  }
+
+}
+
+@media screen and (max-width:1500px) {
+  .img-right img{
+    margin-bottom: 20px;
+  }
+  
+}
+
