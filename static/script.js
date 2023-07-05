@@ -2,15 +2,33 @@ console.log("hello world")
 
 
 
+// function show() {
+//   console.log("show fun triggered");
+//   var element = document.getElementById("hidden");
+//   console.log(element.style.display); // Check initial value
+//   if (element.style.display === "" || element.style.display === "none") {
+//     element.style.display = "block";
+//   }
+//   console.log(element.style.display); // Check updated value
+
+//   var moreworkbtn = document.getElementById("moreworkbtn");
+//   moreworkbtn.innerText = "Close"
+
+// }
+
 function show() {
-  console.log("show fun triggered");
   var element = document.getElementById("hidden");
-  console.log(element.style.display); // Check initial value
+  var moreworkbtn = document.getElementById("moreworkbtn");
+
   if (element.style.display === "" || element.style.display === "none") {
     element.style.display = "block";
+    moreworkbtn.innerText = "Close";
+  } else {
+    element.style.display = "none";
+    moreworkbtn.innerText = "Explore";
   }
-  console.log(element.style.display); // Check updated value
 }
+
 
 function hide(){
   console.log("hide fun triggered")

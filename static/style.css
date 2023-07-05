@@ -10,10 +10,11 @@ body{
 .home{
   height: 100vh;
   width: 100%;
-  background-color: #FBEAEB;
-  /* background-color: #EEA47F; */
-  /* background:url(../static/Images/star.webp); */
- 
+  background:url(../static/Images/back3.avif);
+ background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+
     display: flex;
     align-items: center;
      justify-content:center;
@@ -21,17 +22,20 @@ body{
 }
 
 .home-img{
-  background-color: #00539C;
+  /* background-color: #00539C; */
   width: 75vw;
   height: 80vh;
-  margin: 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   /* align-items: center; */
   border-radius: 10px;
-  box-shadow: 5px 5px 8px black;
-  padding: 20px 30px;
+  /* box-shadow: 5px 5px 8px black; */
+  /* padding: 20px 30px; */
+}
+
+.home-img img{
+  width: 50vw;
 }
 .home-content{
   text-align: center;
@@ -41,6 +45,7 @@ body{
   justify-content: center;
  align-items: center;
 }
+
 
 .home-content h1{
   font-family: "dancing script";
@@ -59,40 +64,7 @@ body{
   border: 2px solid white;
 }
 
-/* .home-left img{
-    
-    width: 30vw;
-}
 
-.home-right{
-    text-align: center;
-}
-
-.home-right p{
-    max-width: 600px;
-} */
-/* 
-@media screen and (max-width:793px) {
-    .home-left img{
-        width: 256px;
-        
-    }
-
-}
-
-@media  screen and (max-width:900px) {
-  .home{
-    flex-direction: column;
-    justify-content:center;
-}
-  
-} */
-
-/* .home img{
-margin-top: 0px;
-margin-left: 100px;
- max-width: 70%;
-} */
 
 .text-container {
     position: relative;
@@ -132,8 +104,14 @@ margin-left: 100px;
 }
 
 .music-section{
+  position: relative;
     margin-top: -4px;
   
+}
+
+.woodstock img{
+  position: absolute;
+  top: 230px;
 }
 .music-btn{
     /* background-color: #e0a96d; */
@@ -168,7 +146,7 @@ margin-left: 100px;
 
 .wave1 .shape-fill {
     /* fill: #CCCCFF; */
-    fill: #00539C;
+    fill: rgb(247, 187, 36);
 }
 
 /* ********** wave 2 ******** */
@@ -190,9 +168,13 @@ margin-left: 100px;
 }
 
 .wave2 .shape-fill {
-    fill: #FBEAEB;
+    fill:rgb(254, 133, 47);
 }
 
+.simply{
+  width: 100vw;
+  height: 400px;
+}
 
 /* ************* Flex box for life work and music ****** */
 
@@ -273,7 +255,8 @@ margin-left: 100px;
     padding-top: 20px;
     padding-bottom: 20px;
     display: none;
-    background-color: #fad2d5;
+    background: linear-gradient(rgb(245, 203, 66),rgb(254, 133, 47));
+    
 }
 
 .ment-toon .flex-box{
@@ -311,8 +294,9 @@ margin-left: 100px;
     text-align: center;
    max-width: 502px;
    padding-bottom: 0px;
-   background-color: #f3c1c5;
+   background-color: #feea51;
    /* background-color: #E2D1F9; */
+   border-radius: 10px;
 }
 
 /* ***************** Home image ************* */
@@ -437,11 +421,11 @@ margin-left: 100px;
 }
 
   /* ************ Icons *************  */
-
+  
   .icon i{
     font-size: 30px;
     padding-bottom: 10px;
-    color: #00539C;
+    color: #000000;
     /* color: #9d9deb; */
   }
 
@@ -469,7 +453,8 @@ margin-left: 100px;
   
     width: 100vw;
     /* background-color: rgb(233, 230, 230); */
-    background-color: white;
+    background: linear-gradient(rgb(254, 133, 47),rgb(245, 203, 66));
+    /* background: linear-gradient(rgb(250, 168, 27),rgb(231, 183, 24)); */
   }
 
   .more-work-btn{
@@ -537,7 +522,8 @@ margin-left: 100px;
   /* **************** music images ********** */
 
   .more-music{
-    background-color: #ffffff;
+    /* background: linear-gradient(rgb(250, 168, 27),rgb(231, 183, 24)); */
+    background: linear-gradient(rgb(231, 183, 24),rgb(250, 168, 27));
     margin-top: 0;
     width: 100vw;
   }
@@ -568,7 +554,7 @@ margin-left: 100px;
     display: none;
 }
 .image-flex-box{
-  margin-top: 10px;
+  
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
@@ -1168,16 +1154,15 @@ footer{
 }
 
 
-.home-img img{
-  width: 33vw;
-}
+
 
 
 
 .music-section{
   /* background-color: #fdc0a2;  */
-  color: white;
-  background-color: #00539C;
+  color: rgb(0, 0, 0);
+  background-color: #ecb913;
+  background: linear-gradient(rgb(250, 168, 27),rgb(231, 183, 24));
 }
 
 #mb{
@@ -1186,95 +1171,21 @@ footer{
 
 .contact{
   background-color:#FBEAEB;
+  background: linear-gradient(rgb(255, 234, 0),rgb(255, 217, 0));
 }
 
 .right-contact{
  
-  background-color: #00539C;
+  background-color: rgb(255, 234, 0);
 }
 
 footer{
   background-color:#00539C;
 }
 
-.more-work{
-  background-color: #FBEAEB;
-}
-
-/* #moving-image1 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  transition: all 0.5s ease-in-out;
-}
 
 
-#moving-image2 {
-  position: fixed;
-  top: 0px;
-  right: 50px;
-  transition: all 0.5s ease-in-out;
-  width: 100px;
-} */
-
-
-.moving-image{
-  width: 50px;
-}
-#moving-image1 {
-  width: 50px;
-  position: absolute;
-  top: 10%;
-  left: -100px;
-  animation: moveRocket 20s linear infinite;
   
-}
-
-#moving-image2 {
-  width: 50px;
-  position: absolute;
-  top: 20%;
-  left: 10%;
-  animation: moveRocket2 20s linear infinite;
-  
-}
-
-@keyframes moveRocket {
-  0% {
-    transform: translateX(0) translateY(100vh);
-  }
-  25% {
-    transform: translateX(70vw) translateY(0);
-  }
-  50% {
-    transform: translateX(100vw) translateY(20vh);
-  }
-  75% {
-    transform: translateX(50vw) translateY(80vh);
-  }
-  100% {
-    transform: translateX(0) translateY(0);
-  }
-}
-
-@keyframes moveRocket2 {
-  0% {
-    transform: translateX(10px) translateY(0vh);
-  }
-  25% {
-    transform: translateX(50vw) translateY(60vh);
-  }
-  50% {
-    transform: translateX(70vw) translateY(30vh);
-  }
-  75% {
-    transform: translateX(80vw) translateY(10vh);
-  }
-  100% {
-    transform: translateX(0) translateY(0);
-  }
-}
-         
 
 .fix-image1{
   position: fixed;
