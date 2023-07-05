@@ -1227,23 +1227,13 @@ body{
 }
 }
 
-#hI2{
-  display: none;
-}
-
 
 @media screen and (max-width: 793px){
   body{
     overflow-x: hidden;
   }
 
-  #hI1{
-    display: none;
-  }
 
-  #hI2{
-    display: block;
-  }
 
 }
 
