@@ -1227,15 +1227,24 @@ body{
 }
 }
 
+#hI2{
+  display: none;
+}
 
 
 @media screen and (max-width: 793px){
   body{
     overflow-x: hidden;
   }
-.home-img img {
-    width: 556px ;
-}
+
+  #hI1{
+    display: none;
+  }
+
+  #hI2{
+    display: block;
+  }
+
 }
 
 @media screen and (max-width: 600px){
@@ -1243,7 +1252,7 @@ body{
     overflow-x: hidden;
   }
 .home-img img {
-    width: 480px ;
+    width: 415px ;
 }
 }
 
