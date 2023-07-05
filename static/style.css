@@ -1234,9 +1234,19 @@ body{
     overflow-x: hidden;
   }
 .home-img img {
-    width: 256px;
+    width: 556px ;
 }
 }
+
+@media screen and (max-width: 600px){
+  body{
+    overflow-x: hidden;
+  }
+.home-img img {
+    width: 480px ;
+}
+}
+
 
 @media screen and (max-width:650px) {
   body{
