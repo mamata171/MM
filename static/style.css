@@ -46,9 +46,6 @@ position: relative;
 
 }
 
-.small-images{
-  
-}
 
 #peace{
   position: absolute;
@@ -62,16 +59,14 @@ position: relative;
   left: 0px;
 }
 .home-img{
-  /* background-color: #00539C; */
   width: 75vw;
   height: 80vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* align-items: center; */
+ 
   border-radius: 10px;
-  /* box-shadow: 5px 5px 8px black; */
-  /* padding: 20px 30px; */
+
 }
 
 .background-image {
@@ -244,14 +239,7 @@ position: relative;
     
 }
 
-.fbw{
-  /* background-color: rgb(243, 244, 248);
-  width: 70vw;
-  margin: auto;
-  border-radius: 10px;
-  box-shadow:4px 4px 8px rgb(56, 55, 55); */
 
-}
 
 .fb2{
     display: flex;
@@ -309,7 +297,6 @@ position: relative;
 
   /* ************************** Proppeling Section ******************************* */
 
-/* ********************************************************* */
 .propelling-section{
   width: 100vw;
   display: none;
@@ -442,8 +429,7 @@ position: relative;
     justify-content: center;
 }
 .right-contact{
-    /* background-color: rgb(10, 10, 10); */
-    /* color: white; */
+ 
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 25px;
@@ -476,7 +462,6 @@ position: relative;
     border: 1px solid #ccc;
     background-color: #ffffff;
 
-    /* box-shadow: 4px 4px 7px grey; */
   }
 
   .text-area{
@@ -493,11 +478,7 @@ position: relative;
   }
  
   @media screen and (max-width:423px) {
-    .left-contact{
-      /* text-align: center;
-      justify-content: center; */
   
-    }
 
     .right-contact{
       width: 90vw;
@@ -562,8 +543,6 @@ position: relative;
   }
 
   form button{
-    /* background-color: rgb(156, 200, 218); */
-    /* background-color: #c4b6f6; */
     font-weight: bolder;
     font-size: large;
   }
@@ -571,9 +550,7 @@ position: relative;
   .more-work{
   
     width: 100vw;
-    /* background-color: rgb(233, 230, 230); */
     background: linear-gradient(rgb(254, 133, 47),rgb(245, 203, 66));
-    /* background: linear-gradient(rgb(250, 168, 27),rgb(231, 183, 24)); */
   }
 
   .more-work-btn{
@@ -641,7 +618,6 @@ position: relative;
   /* **************** music images ********** */
 
   .more-music{
-    /* background: linear-gradient(rgb(250, 168, 27),rgb(231, 183, 24)); */
     background: linear-gradient(rgb(231, 183, 24),rgb(250, 168, 27));
     margin-top: 0;
     width: 100vw;
@@ -651,7 +627,6 @@ position: relative;
     width: 350px;
     height: 350px;
     margin-bottom: 15px;
-    /* border: 2px solid black; */
     margin: 30px;
     border-radius: 10px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
@@ -665,7 +640,6 @@ position: relative;
     height: 350px;
   opacity: 0;
   margin-bottom: 15px;
-    /* border: 2px solid black; */
     margin: 30px;
     border-radius: 10px;
 
@@ -691,14 +665,8 @@ position: relative;
     
     width: 90vw;
     margin: 0px;
-    
-
-  
 }
 }
-/* .image-flex-box img:hover{
-    box-shadow: 10px 10px 10px grey;
-} */
 
 #photos{
     display: none;
@@ -906,9 +874,7 @@ position: relative;
 
 .bubbles2{
   width: 100%;
-  /* display: flex;
-  align-items: center;
-  justify-content: space-around; */
+
   position: relative;
   margin-right: 300px;
   bottom:-70px;
@@ -962,118 +928,6 @@ position: relative;
 
 }
 
-
-
-.wrapper-sec{
-    padding:30px 10px;
-    background-color: rgb(241, 84, 178);
-    border-radius: 30px;
-    width: 70vw;
-}
-.wrapper {
-  max-width: 1100px;
-  width: 100%;
-  position: relative;
-}
-.wrapper i {
-  top: 50%;
-  height: 50px;
-  width: 50px;
-  cursor: pointer;
-  font-size: 1.25rem;
-  position: absolute;
-  text-align: center;
-  line-height: 50px;
-  background: #fff;
-  border-radius: 50%;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
-  transform: translateY(-50%);
-  transition: transform 0.1s linear;
-}
-.wrapper i:active{
-  transform: translateY(-50%) scale(0.85);
-}
-.wrapper i:first-child{
-  left: -22px;
-}
-.wrapper i:last-child{
-  right: -22px;
-}
-.wrapper .carousel{
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: calc((100% / 3) - 12px);
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  gap: 16px;
-  border-radius: 8px;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-}
-.carousel::-webkit-scrollbar {
-  display: none;
-}
-.carousel.no-transition {
-  scroll-behavior: auto;
-}
-.carousel.dragging {
-  scroll-snap-type: none;
-  scroll-behavior: auto;
-}
-.carousel.dragging .card {
-  cursor: grab;
-  user-select: none;
-}
-.carousel :where(.card, .img) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.carousel .card {
-  scroll-snap-align: start;
-  height: 342px;
-  list-style: none;
-  background: #fff;
-  cursor: pointer;
-  padding-bottom: 15px;
-  flex-direction: column;
-  border-radius: 8px;
-}
-.carousel .card .img {
-  background: #8B53FF;
-  height: 208px;
-  width: 208px;
-  border-radius: 50%;
-}
-.card .img img {
-  width: 208px;
-  height: 208px;
-  border-radius: 50%;
-  object-fit: cover;
-  
-  border: 4px solid #fff;
-}
-.carousel .card h2 {
-  font-weight: 500;
-  font-size: 1.56rem;
-  margin: 30px 0 5px;
-}
-.carousel .card span {
-  color: #6A6D78;
-  font-size: 1.31rem;
-}
-
-@media screen and (max-width: 900px) {
-  .wrapper .carousel {
-    grid-auto-columns: calc((100% / 2) - 9px);
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .wrapper .carousel {
-    grid-auto-columns: 100%;
-  }
-}
 
 .brain{
   max-height: 300px;
@@ -1148,11 +1002,6 @@ position: relative;
   display: inline-block;
 
 }
-/* 
-.box img{
-  width: 350px;
-  height: 300px;
-} */
 
 .box:hover{
  cursor: pointer;
@@ -1221,9 +1070,6 @@ position: relative;
   
 }
 
-.icon{
-
-}
 
 @media screen and (max-width:1047px) {
   .left-contact{
@@ -1284,11 +1130,6 @@ footer{
   
 }
 
-
-
-
-
-
 .music-section{
   /* background-color: #fdc0a2;  */
   color: rgb(0, 0, 0);
@@ -1313,10 +1154,6 @@ footer{
 footer{
   background-color:#00539C;
 }
-
-
-
-  
 
 .fix-image1{
   position: fixed;
