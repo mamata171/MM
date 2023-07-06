@@ -17,13 +17,24 @@ body{
   }
   #smallImage {
     display: block;
+    width: 500px;
   }
 
   .small-images img{
     width: 130px;
   }
+
+  #peace{
+    display: none;
+  }
 }
 
+@media (max-width: 600px) {
+
+  #smallImage {
+    width: 350px;
+  }
+}
 /* ********* Home Page ********** */
 .home{
   height: 100vh;
@@ -144,8 +155,10 @@ position: relative;
 
 .work-section{
     margin-top: -4px;
-    color: white;
+    
 }
+
+
 
 .music-section{
   position: relative;
@@ -245,7 +258,7 @@ position: relative;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-bottom: 3px;
+    /* margin-bottom: 3px; */
     
 }
 .img-left{
@@ -1352,3 +1365,8 @@ body{
   
 }
 
+@media screen and (max-width:444px) {
+  .contact h1{
+    margin-bottom: 2px !important;
+  }
+}
