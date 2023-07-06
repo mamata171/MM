@@ -17,6 +17,21 @@ position: relative;
 
 }
 
+.small-images{
+  
+}
+
+#peace{
+  position: absolute;
+  top: 75vh; 
+  right: 0px;
+}
+
+#woodstockimg{
+  position: absolute;
+  top: 0px; 
+  left: 0px;
+}
 .home-img{
   /* background-color: #00539C; */
   width: 75vw;
@@ -259,8 +274,66 @@ position: relative;
     .cxo img{
     width: 80vw;
     }
+  }
+
+  /* ************************** Proppeling Section ******************************* */
+.propelling-section{
+  width: 100vw;
+  background: linear-gradient(rgb(254, 133, 47),rgb(245, 203, 66));
+  
+}
+.prop-p{
+  width: 30vw;
+  /* margin-right: 70px; */
+ 
+}
+.prop-div{
+  text-align: center;
+  /* width: 60vw; */
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
 }
 
+@media screen and (max-width:1260px) {
+  .prop-div{
+  justify-content:center !important;
+
+  }
+  .prop-p{
+    width: 80vw;
+    margin-left: 33px;
+    text-align: center !important;
+  }
+
+  .prop-p p{
+    text-align: center;
+    padding-left: 40px;
+
+  }
+  .prop-div{
+    flex-direction: column-reverse;
+
+  }
+  
+}
+
+@media screen and (max-width:708px) {
+  .prop-p{
+    width: 80vw;
+    margin-left: 10px;
+    text-align: center !important;
+  }
+  .prop-div img{
+    width: 400px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .prop-p{
+    padding-left: 10px;
+  }
+}
 /* ********** ment-toon ************ */
 .ment-toon{
     padding-top: 20px;
@@ -305,7 +378,7 @@ position: relative;
     text-align: center;
    max-width: 502px;
    padding-bottom: 0px;
-   background-color: #feea51;
+   background-color: antiquewhite;
    /* background-color: #E2D1F9; */
    border-radius: 10px;
 }
