@@ -41,14 +41,18 @@ function checkScreenSize() {
 }
 
 function show() {
-  var element = document.getElementById("hidden");
+  var element1 = document.getElementById("hidden");
+  var element2 = document.getElementById("prop-hidden");
+
   var moreworkbtn = document.getElementById("moreworkbtn");
 
-  if (element.style.display === "" || element.style.display === "none") {
-    element.style.display = "block";
+  if (element1.style.display === "" || element1.style.display === "none") {
+    element1.style.display = "block";
+    element2.style.display = "block";
     moreworkbtn.innerText = "Close";
   } else {
-    element.style.display = "none";
+    element1.style.display = "none";
+    element2.style.display = "none";
     moreworkbtn.innerText = "Explore";
   }
 }
@@ -57,8 +61,10 @@ function show() {
 function hide(){
   console.log("hide fun triggered")
   element = document.getElementById("hidden")
+  element2 = document.getElementById("prop-hidden")
   if (element.style.display === "block") {
     element.style.display = "none";
+    element2.style.display = "none";
   } 
 }
 
