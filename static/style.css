@@ -5,6 +5,24 @@ body{
     overflow-x: hidden;
      box-sizing: border-box;
 }
+/* Styles for large screens */
+#largeImage {
+  display: block;
+}
+
+/* Styles for small screens */
+@media (max-width: 768px) {
+  #largeImage {
+    display: none;
+  }
+  #smallImage {
+    display: block;
+  }
+
+  .small-images img{
+    width: 130px;
+  }
+}
 
 /* ********* Home Page ********** */
 .home{

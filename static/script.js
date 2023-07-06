@@ -16,6 +16,30 @@ console.log("hello world")
 
 // }
 
+// Check screen size on page load
+window.addEventListener('DOMContentLoaded', function() {
+  checkScreenSize();
+});
+
+// Check screen size on window resize
+window.addEventListener('resize', function() {
+  checkScreenSize();
+});
+
+// Function to check screen size and update image
+function checkScreenSize() {
+  var largeImage = document.getElementById("largeImage");
+  var smallImage = document.getElementById("smallImage");
+
+  if (window.innerWidth <= 768) {
+    largeImage.style.display = "none";
+    smallImage.style.display = "block";
+  } else {
+    largeImage.style.display = "block";
+    smallImage.style.display = "none";
+  }
+}
+
 function show() {
   var element = document.getElementById("hidden");
   var moreworkbtn = document.getElementById("moreworkbtn");
