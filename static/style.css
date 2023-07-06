@@ -84,6 +84,12 @@ position: relative;
   z-index: -1;
 }
 
+@media screen and (max-width:550px) {
+  .background-image{
+    background-size: cover;
+  }
+  
+}
 .home-img img{
   width: 50vw;
 }
