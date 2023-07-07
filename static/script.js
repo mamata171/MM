@@ -53,7 +53,7 @@ function show() {
   } else {
     element1.style.display = "none";
     element2.style.display = "none";
-    moreworkbtn.innerText = "Explore";
+    moreworkbtn.innerText = "More Work";
   }
 }
 

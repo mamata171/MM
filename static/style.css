@@ -389,7 +389,7 @@ position: relative;
 }
 
 .mentoon-toonland{
-    padding-top: 30px;
+    /* padding-top: 30px; */
     /* background-color: #cc9d90cd; */
     background-color: rgb(255, 255, 255);
     margin: 20px 30px;
@@ -1256,3 +1256,27 @@ body{
   }
   
 }
+
+
+.last-flex{
+  justify-content: center;
+  margin-top: 20px;
+
+}
+
+.last-flex div{
+  margin-right: 60px;
+}
+
+@media screen and (max-width:722px) {
+  .last-flex div{
+    margin-right: 0px;
+  }
+  
+}
+
+.phone a{
+  text-decoration: none;
+  color: #000;
+}
+
